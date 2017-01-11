@@ -37,6 +37,7 @@ public class EntryPoint {
 				break;
 			case "keys":
 				KeyPair keys = RSAUtils.returnKeysRSA();
+				System.out.println("El resultado del cifrado es: ");
 				System.out.println(KeyManipulator.keyToString(keys.getPublic()));
 				System.out.println(KeyManipulator.keyToString(keys.getPrivate()));
 				break;
