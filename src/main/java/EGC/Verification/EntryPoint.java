@@ -5,7 +5,6 @@ import java.security.NoSuchAlgorithmException;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.security.spec.InvalidKeySpecException;
-import java.util.Arrays;
 import java.util.Base64;
 
 import javax.crypto.BadPaddingException;
@@ -58,7 +57,7 @@ public class EntryPoint {
 		}
 	}
 	
-	//muestra el manual de uso en caso de invocación de help 
+	//muestra el manual de uso en caso de invocacion de help 
 	private static void showHelp(){
 		System.out.println("Uso:");
 		System.out.println("java -jar verification.jar <comando> [parametros]");

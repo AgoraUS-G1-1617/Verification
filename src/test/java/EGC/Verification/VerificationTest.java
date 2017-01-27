@@ -29,7 +29,7 @@ public class VerificationTest {
 	//actualizados en el trabajo de 2016/17
 	
 	// Los tests testGetKeyDes(), testEncryptDES(), testDecryptDES(), testGetMD5(), testGetSHA1()
-	// 		han sido borrados ya que los métodos han sido borrados en RSAUtils
+	// 		han sido borrados ya que los metodos han sido borrados en RSAUtils
 	
 	@Test
 	public void testPubKeyStringConversion() throws InvalidKeySpecException, NoSuchAlgorithmException{
@@ -130,20 +130,20 @@ public class VerificationTest {
 		System.out.println("Key privada: " + KeyManipulator.keyToString(keys.getPrivate()));
 		System.out.println("Key publica: " + KeyManipulator.keyToString(keys.getPublic()));
 		System.out.println("");
-		System.out.println("--Keys creadas para la comprobación errónea del checkKey--");
+		System.out.println("--Keys creadas para la comprobacion erronea del checkKey--");
 		System.out.println("Key privada: " + KeyManipulator.keyToString(keysAuxiliar.getPrivate()));
 		System.out.println("Key publica: " + KeyManipulator.keyToString(keysAuxiliar.getPublic()));
 		System.out.println("----------------------Resultados--------------------------");
-		System.out.println("Comprobación con las keys correctas");
+		System.out.println("Comprobacion con las keys correctas");
 		if(comprobacion)
-			System.out.println("Votación correcta");
+			System.out.println("Votacion correcta");
 		else 
-			System.out.println("Votación amañada");
-		System.out.println("Comprobación con las keys incorrectas");
+			System.out.println("Votacion amanyada");
+		System.out.println("Comprobacion con las keys incorrectas");
 		if(comprobacionAuxiliar)
-			System.out.println("Votación correcta");
+			System.out.println("Votacion correcta");
 		else 
-			System.out.println("Votación amañada");
+			System.out.println("Votacion amanyada");
 		System.out.println("");
 	}
 

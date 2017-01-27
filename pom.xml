@@ -69,13 +69,14 @@
 			</plugin>
 		</plugins>
 	</build>
-
+	
+	<!-- Fuente: https://blog.bintray.com/2015/09/17/publishing-your-maven-project-to-bintray/-->
 	<distributionManagement>
-		<repository>
-			<id>user</id>
-			<name>user</name>
-			<url>http://localhost:8081/artifactory/libs-release-local</url>
-		</repository>
+	  <repository>
+	      <id>bintray</id>
+		<!-- .../maven/[usuario de bintray]/[repo maven de bintray]/[paquete en el repo]/;publish=1 -->
+	      <url>https://api.bintray.com/maven/verificacionegc/Verificacion/verificacion-jar/;publish=1</url>
+	  </repository>
 	</distributionManagement>
 
 </project>

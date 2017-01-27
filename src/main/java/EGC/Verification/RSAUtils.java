@@ -14,16 +14,16 @@ import javax.crypto.NoSuchPaddingException;
 
 public class RSAUtils {
 	
-	// El método getHashCodeMD5 ha sido borrado porque no necesitamos su aplicación.
-	// El método getHashCodeSHA ha sido borrado porque no necesitamos su aplicación.
-	// 		ya que este año no usamos la encriptación SHA
-	// El método returnKeyDES ha sido borrado porque no necesitamos su aplicación.
-	// 		ya que este año no usamos la encriptación DES
-	// Los métodos encryptDES y desencryptDES han sido borrado porque no necesitamos su aplicación.
-	// 		ya que este año no usamos la encriptación DES
+	// El metodo getHashCodeMD5 ha sido borrado porque no necesitamos su aplicacion.
+	// El metodo getHashCodeSHA ha sido borrado porque no necesitamos su aplicacion.
+	// 		ya que este anyo no usamos la encriptacion SHA
+	// El metodo returnKeyDES ha sido borrado porque no necesitamos su aplicacion.
+	// 		ya que este anyo no usamos la encriptacion DES
+	// Los metodos encryptDES y desencryptDES han sido borrado porque no necesitamos su aplicacion.
+	// 		ya que este anyo no usamos la encriptacion DES
 	
 	
-	// Método que devuelve un par de keys aleatorias(publica y privada) 
+	// Metodo que devuelve un par de keys aleatorias(publica y privada) 
 	public static KeyPair returnKeysRSA(){
 	KeyPairGenerator keyGen = null;
 	try {
