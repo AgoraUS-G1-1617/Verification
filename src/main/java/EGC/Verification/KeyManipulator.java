@@ -31,6 +31,7 @@ public class KeyManipulator {
 		return res;
 	}
 	
+	
 	public static PublicKey stringToPubKey(String in) throws InvalidKeySpecException, NoSuchAlgorithmException{
 		KeyFactory kf = KeyFactory.getInstance("RSA");
 		
