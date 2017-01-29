@@ -1,0 +1,50 @@
+INTRODUCCION Y CONTEXTO
+
+La finalidad de esta introducción consiste en conocer cúales son los diferentes subsistemas que el proyecto Agora
+Voting tiene preparado para que pueda ser trabajado de forma colectiva, la elección por parte de nuestro equipo
+de proyecto del subsistema a desarrollar y los diferentes conceptos que vamos a utilizar para el desarrollo
+del trabajo.
+
+Para entrar en el contexto de los proyectos a realizar en la asignatura de Evolución y Gestión de la Configuración, 
+y basándonos en Agora Voting, que es el proyecto propuesto sobre el que todos los alumnos vamos a trabajar,
+los correspondientes subsistemas a desarrollar serían:
+-- Autenticación
+-- Creación y Administración de Votaciones
+-- Sistema de modificación de Resultados
+-- Almacenamiento de Votos
+-- Deliberaciones
+-- Recuento
+-- Creación/Administración de Censos
+-- Frontend de Resultados
+-- Visualización de Resultados
+-- Verificación
+-- Cabina de Votación
+Cada uno de estos subsistemas será desarrollado por un grupo de alumnos. Por consecuente, cada grupo tendrá
+la responsabilidad de hacer su subsistema integrado con el resto para la homogeneidad y construcción del mismo 
+para que sea funcional. 
+Nuestro grupo será el encargado de desarrollar y mejorar el subsistema de Verificación en Ágora US.
+Las funcionalidades que presenta nuestro subsistema de Verificación conlleva:
+-- Crear un par de claves clave pública y privada para cifrar y descifrar votaciones.
+-- Cifrar un voto dado.
+-- Descifrar un voto dado.
+Con respecto a la integración, nuestro subsistema necesita integrarse en los siguientes subsistemas:
+- Recuento y modificación: necesitan de nuestro subsistema para obtener el par de claves (de cifrado y descifrado),
+así como la posibilidad de descifrar el texto que nos indiquen a través de nuestra funcionalidad.
+- Cabina de votaciones y cabina de Telegram: se encargarán de cifrar datos a través de nuestros métodos 
+y haciendo uso de la clave pública (generada por nuestro subsistema) que Recuento ofrecerá a través de su API.
+- Creación y administración de votaciones.
+
+Una vez planteados todos estos detalles para el desarrollo de nuestro subsistema, la documentación para la misma
+constará de la ampliación de los conceptos que conlleva realizarse en nuestro subsistema en un resumen, explicaremos
+todo lo que conlleva el subsistema de Verificación, en qué está basado, cúales son los objetivos que se 
+plantean y cómo se llevan a cabo. Debemos señalar y documentar todas las aplicaciones que vamos a utilizar tanto
+herramientas de gestión como aplicaciones para el código de trabajo (en este caso, GitHub y Eclipse que explicaremos
+más adelante); haremos una descripción detallada acerca de la integración de nuestro subsistema con el resto
+y el despliegue del mismo para que sea utilizable por todos los demás y también como vamos a resolver la
+gestión de código y de incidencias para un mejor entendimiento con los demás desarrolladores del equipo de trabajo
+y una mayor homogeneidad: cuando se realice un cambio, cúales son los pasos a seguir, quién se encarga de dar el 
+visto bueno a la mejora, qué desarrolladores van a realizar una parte del trabajo u otra, cuándo será 
+conveniente incorporar ese cambio o mejora en nuestro subsistema,etc.
+Para finalizar gestionaremos un mapa de herramientas en el que se muestra gráficas sobre cuáles han sido los equipos
+utilizados y las herramientas, concluyendo con un breve resumen de lecciones aprendidas y conclusiones que se han
+ido obteniendo durante el desarrollo del trabajo completo.

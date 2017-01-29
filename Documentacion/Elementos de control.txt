@@ -1,0 +1,14 @@
+ELEMENTOS DE CONTROL
+
+Para el control y gestión de la configuración, debemos hacer uso de una herramienta que nos ayude a llevar un
+control y una gestión de control para las versiones que vayamos realizando a lo largo del desarrollo del 
+proyecto. La asignatura nos ofrece la posibilidad, ya que ha sido estudiada a lo largo del curso académico,
+de la utilización de la herramienta GitHub.
+GitHub es una plataforma de alojamiento de código para el control de versiones y la colaboración. Permite a ti y 
+a otros trabajar juntos en proyectos desde cualquier lugar. Por ello, será una buena aplicación ya que en 
+nuestro proyecto nos basamos en la utilización de un repositorio en el que todos los miembros puedan 
+participar ya sea añadiendo código o utilizando código ya añadido de otro desarrollador.
+También utilizaremos esta herramienta para identificar las diferentes tareas que cada miembro del equipo vaya
+utlizar e ir observando constantemente todos los posibles cambios de forma que aparezca en detalles el 
+código cambiado de cada miembro del equipo que vaya modificando y haciendo mejoras en el proyecto.
+Podemos acceder a la herramienta a través de: https://github.com/ y empezar a trabajar con ella.

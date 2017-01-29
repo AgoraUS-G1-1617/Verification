@@ -1,0 +1,38 @@
+GESTION DE CODIGO FUENTE
+
+Gestión de cambio para la mejora: 
+
+Tras algunas opiniones e ideas para poder llevar a cabo una mejora del proyecto,en este caso
+en la gestión de cambios en el código fuente, hemos propuesto una serie de pasos a seguir para que 
+esto pueda llevarse a cabo con una eficiencia mayor a la anterior.
+Nos enfrentamos ante un posible cambio, corrección, prueba o mejora del código fuente y procedemos a 
+hacer el cambio. El desarrollador que se disponga a hacer este cambio, deberá crear una 'issue' con su
+correspondiente justificación en ella. Una de las mejoras aplicadas es la incorporación de etiquetas para 
+distinguir las distintas issues creadas. Cuando se crea una issue, se deberá obligatoriamente añadir una etiqueta 
+según el cambio que se vaya a realizar:
+-bug: si este cambio se trata de la corrección de un error en el código
+-enhancement: si consiste en mejorar algún tipo de metodología 
+-question: en el caso que se quiera resolver alguna duda sobre el cambio que vaya a realizarse antes de 
+ponerse a trabajar sobre él
+-help wanted: un desarrollador del equipo de trabajo puede 'pedir ayuda' a otro compañero que pueda 
+contribuir en la realización de la issue que ha creado.
+
+Estas son las etiquetas posibles a usar una vez creada una issue. A continuación, el desarrollador que haya creado 
+la nueva 'issue' deberá asignarsela a sí mismo.
+NOTA:no puede haber más de dos desarrolladores asignados por issue.
+
+Creadas la issue correspondiente, el desarrollador puede empezar a trabajar en el hito que se ha marcado a 
+realizar en el proyecto. Todo esto está gestionado por GitHub; por ello, 'subiremos' y 'descargaremos código' de
+nuestro proyecto en la herramienta con el uso de commits.
+El código fuente de nuestro subsistema está distribuido en ramas de trabajo, 'master' y 'developer'.
+NOTA: Excepcionalmente se podrán abrir ramas adicionales con propósitos concretos, como probar ideas, 
+implementaciones alternativas etc.
+Developer será la rama de desarrollos; es decir, todos los primeros cambios, correcciones, mejoras se subirán
+a esa rama, por lo que todo el código en desarrollo permanecerá ahí. Una vez que se apruebe de que el cambio
+va a pasar a formar parte del proyecto, se realicen las pruebas y tests necesarios para que pueda ser verificado
+y se considera finalizado por otro desarrollador, éste tendrá la decisión final de decidir si se incorpora o no
+de manera definitiva a la rama 'master' el nuevo cambio a nuestro proyecto.
+El encargado de hacer la subida del cambio a la rama 'master' deberá añadir una etiqueta a la issue asignada
+que sea 'wontfix' para marcar que esa issue ha quedado resuelta e incorporada a la rama master. Tras esto,
+el mismo desarrollador encargado de poner la etiqueta debe cerrar la issue y quedará finalizada.
+
