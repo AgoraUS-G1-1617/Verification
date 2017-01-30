@@ -3,6 +3,7 @@ package EGC.Verification;
 import static org.junit.Assert.*;
 
 import java.io.IOException;
+import java.security.InvalidKeyException;
 import java.security.KeyPair;
 import java.security.NoSuchAlgorithmException;
 import java.security.PrivateKey;
@@ -11,6 +12,9 @@ import java.security.spec.InvalidKeySpecException;
 import java.util.Arrays;
 
 import javax.crypto.BadPaddingException;
+import javax.crypto.IllegalBlockSizeException;
+import javax.crypto.NoSuchPaddingException;
+import javax.crypto.SecretKey;
 
 import org.junit.After;
 import org.junit.Before;
@@ -167,4 +171,68 @@ public class VerificationTest {
 		System.out.println("Voto encriptado: " + Arrays.toString(res));
 		System.out.println("");
 	}
+	
+	
+	
+	
+	
+	/////////////////////////////////////
+	
+	@Test
+	public void testGetKeyDes() {
+		System.out.println("==========================================================");
+		System.out.println("==================TEST 7 (GENERAR KEY DES)================");
+		System.out.println("==========================================================");
+		System.out.println("");
+		SecretKey key = DESUtils.returnKeysDES();
+		System.out.println("----------------------------KEY---------------------------");
+		System.out.println("------------------Key privada generada--------------------");
+		System.out.println("Key privada: " + KeyManipulator.keyToString(key));
+		assertNotNull(key);
+		System.out.println(" ");
+	}
+
+
+	@Test
+	public void testEncryptDES() throws InvalidKeyException, NoSuchAlgorithmException, NoSuchPaddingException, IllegalBlockSizeException, BadPaddingException, IOException {
+		System.out.println("==========================================================");
+		System.out.println("==================TEST 8 (ENCRIPTAR DES)==================");
+		System.out.println("==========================================================");
+		System.out.println("");
+		SecretKey key = DESUtils.returnKeysDES();
+		System.out.println("------------------Key privada generada--------------------");
+		System.out.println("Key privada: " + KeyManipulator.keyToString(key));
+
+		System.out.println("------------------------Resultado-------------------------");
+		String entrada = "Esto es una prueba";
+		System.out.println("Voto entrada: " + entrada);
+		System.out.println("Encriptamos..");
+		byte[] enc = DESUtils.encryptDES(key, entrada);
+
+		System.out.println("Voto encriptado: " + Arrays.toString(enc));
+		System.out.println(" ");
+	}
+
+	@Test
+	public void testDecryptDES() throws InvalidKeyException, NoSuchAlgorithmException, NoSuchPaddingException, IllegalBlockSizeException, BadPaddingException, IOException {
+		System.out.println("==========================================================");
+		System.out.println("==================TEST 9 (DESENCRIPTAR DES)===============");
+		System.out.println("==========================================================");
+		System.out.println("");
+		SecretKey key = DESUtils.returnKeysDES();
+		System.out.println("------------------Key privada generada--------------------");
+		System.out.println("Key privada: " + KeyManipulator.keyToString(key));
+		System.out.println("------------------------Resultado-------------------------");
+		String entrada = "Esto es una prueba";
+		System.out.println("Voto entrada: " + entrada);
+		System.out.println("Encriptamos..");
+		byte[] enc = DESUtils.encryptDES(key, entrada);
+		System.out.println("Voto encriptado: " + Arrays.toString(enc));
+		System.out.println("Desencriptamos..");
+		String fin = DESUtils.decryptDES(key, enc);
+		assertNotNull(fin);
+		System.out.println("Voto Desencriptado en DES: " + new String(enc) + " -> " + fin);
+	}
+	
+
 }
