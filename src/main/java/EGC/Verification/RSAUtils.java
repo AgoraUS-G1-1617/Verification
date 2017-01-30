@@ -14,11 +14,6 @@ import javax.crypto.NoSuchPaddingException;
 
 public class RSAUtils {
 	
-	// El metodo getHashCodeMD5 ha sido borrado porque no necesitamos su aplicacion.
-	// El metodo getHashCodeSHA ha sido borrado porque no necesitamos su aplicacion.
-	// 		ya que este anyo no usamos la encriptacion SHA
-
-	
 	
 	// Metodo que devuelve un par de keys aleatorias(publica y privada) 
 	public static KeyPair returnKeysRSA(){
