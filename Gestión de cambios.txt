@@ -1,0 +1,29 @@
+Gestión de cambio para la mejora: 
+
+Tras algunas opiniones e ideas para poder llevar a cabo una mejora del proyecto,en este caso
+en la gestión de cambios en el código fuente, hemos propuesto una serie de pasos a seguir para que 
+esto pueda llevarse a cabo con una eficiencia mayor a la anterior.
+Nos enfrentamos ante un posible cambio, corrección, prueba o mejora del código fuente y procedemos a 
+hacer el cambio. El desarrollador que se disponga a hacer este cambio, deberá crear una 'issue' con su
+correspondiente justificación en ella. Una de las mejoras aplicadas es la incorporación de etiquetas para 
+distinguir las distintas issues creadas. Cuando se crea una issue, se deberá obligatoriamente añadir una etiqueta 
+según el cambio que se vaya a realizar:
+-bug: si este cambio se trata de la corrección de un error en el código
+-enhancement: si consiste en mejorar algún tipo de metodología 
+-question: en el caso que se quiera resolver alguna duda sobre el cambio que vaya a realizarse antes de 
+ponerse a trabajar sobre él
+-help wanted: un desarrollador del equipo de trabajo puede 'pedir ayuda' a otro compañero que pueda 
+contribuir en la realización de la issue que ha creado.
+
+Estas son las etiquetas posibles a usar una vez creada una issue. A continuación, el desarrollador que haya creado 
+la nueva 'issue' deberá asignarsela a sí mismo para ponerse a trabajar con ella.
+NOTA:no puede haber más de dos desarrolladores asignados por issue.
+
+
+
+
+
+
+
+
+
