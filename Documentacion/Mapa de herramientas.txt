@@ -1,0 +1,9 @@
+MAPA DE HERRAMIENTAS
+
+Eclipse: IDE de Java empleado para el desarrollo y mantenimiento del código correspondiente a nuestro subsistema 
+así como para la generación automática del archivo '.jar'.
+Git: Usamos Git como herramienta de control de versiones. En nuestro subsistema utilizamos un repositorio propio 
+además del repositorio común. Además, utilizamos la funcionalidad 'Issue' para gestionar las incidencias.
+
+VirtualBox: Aplicación de gestión de máquinas virtuales. Se monta una máquina virtual con Windows XP para la 
+integración continua con Jenkins.
