@@ -1,0 +1,38 @@
+GESTION DE INCIDENCIAS
+
+Como en casi todos los apartados, al inicio del proyecto, al ser un grupo tan reducido, la comunicación entre 
+los integrantes del subsistema es bastante clara y frecuente, por tanto, todos estábamos al día de posibles 
+incidencias y/o cambios. La actuación consecuente con esto, se derivaba en una reunión en la que todos los 
+integrantes participaban, daban su valoración y se proponía una resolución al problema presentado.
+Sin embargo, con la propia experiencia adquirida durante el desarrollo del proyecto, vimos la necesidad imperativa 
+de utilizar alguna herramienta para ayudarnos a gestionar las incidencias y cambios.
+Tras valorar las herramientas vistas en clase, decidimos utilizar GitHub, con su funcionalidad 'issues'.
+Como medidas tomadas para hacer una buena gestión de incidencias en nuestro proyecto, nos hemos basado en la
+utilización de las issues para tal gestión. Para ello, utilizaremos la siguiente plantilla cada vez que haya 
+que reportar un error o solicitud de cambio:
+-Autor, persona que encontró la necesidad del cambio o corrección
+-Fecha
+-Descripción del problema
+-Lugar del error en el código
+-Salida esperada, suceso esperado si no hubiese error
+
+Se abrirá una nueva 'issue' en GitHub siguiendo dicha plantilla, y se informará a los demás miembros a través 
+de los canales de comunicación establecidos. Esto ayudará a que quede constancia del cambio. En nuestro caso,
+el miembro del equipo con el rol de Jefe de Proyecto será el encargado de dar las incidencias por válidas,
+innecesarias o concluidas. GitHub nos proporciona un amplio abanico de etiquetas para ayudar a clasificar 
+las incidencias que reportamos. Esta clasificación basada en los tipos de etiquetas que usamos para valorar
+las issues está explicada en el punto de Gestión de Código Fuente con todo detalles del uso de las etiquetas.
+También es posible personalizar el etiquetado para dotar estas incidencias de estados (stated, fixed, consulting, 
+etc.).
+Todas las incidencias que informen de un error en el comportamiento del sistema deberán incluir pasos para 
+reproducir el error, salida esperada y salida obtenida.
+Cuando una incidencia sea resuelta, el encargado de resolverla, deberá comprobar que la resolución es correcta 
+y será su decisión añadir dicha modificación a la rama 'master'. Este proceso también es explicado a mayor nivel 
+de detalle en el punto de Gestión de Código Fuente.
+
+Para ello, utilizaremos también GitHub aprovechando el repositorio común que estamos utilizando todos los 
+subsistemas. Se hará de la siguiente forma: al crear la 'issue', en su nombre, pondremos una etiqueta en 
+mayúsculas y entre corchetes referenciando el nombre del grupo con el que nos queremos comunicar.
+Por ejemplo, si necesito informar de un error al grupo cabina de votación, generaría una 'issue' con un nombre 
+de la forma '[CABINA] Error al importar el archivo…'. De esta forma, cuando algún miembro de dicho grupo acceda 
+a la herramienta, puede ver de un simple vistazo a qué 'issues' debe prestarles mayor atención.
